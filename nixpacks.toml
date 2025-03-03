@@ -1,2 +1,11 @@
+[phases.setup]
+pkgs = ["python3", "gcc"]
+
+[phases.install]
+cmds = [
+    "python -m venv --copies /opt/venv && . /opt/venv/bin/activate",
+    "pip install -r requirements.txt"
+]
+
 [phases.start]
-cmd = "python bot.py"  # Замените "main.py" на имя вашего файла с ботом
+cmd = "python bot.py" # Убедитесь, что это правильное имя вашего файла
