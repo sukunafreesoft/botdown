@@ -1,0 +1,2 @@
+[phases.start]
+cmd = "python bot.py"  # Замените "main.py" на имя вашего файла с ботом
